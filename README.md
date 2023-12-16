@@ -2,7 +2,7 @@
 
 A very very simple and reponsive landing page for a web design agency
 
-Live site url: [https://quiel-motivation-meme-project.netlify.app/](https://quiel-motivation-meme-project.netlify.app/)
+Live site url: [https://quiel-web-design-agency-project.netlify.app/](https://quiel-web-design-agency-project.netlify.app/)
 
 ## Table of contents
 
