@@ -1,0 +1,97 @@
+:root {
+	--cl-blue: midnightblue;
+	--cl-white: #faf9f6;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+img {
+	display: block;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	min-height: 100vh;
+	padding: 4rem 6rem;
+	background-color: var(--cl-white);
+	position: relative;
+}
+
+.logo {
+	margin-bottom: 5rem;
+}
+
+h1 {
+	font-size: 8rem;
+	margin-bottom: 4rem;
+}
+
+h1 span {
+	color: var(--cl-blue);
+}
+
+.card-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	display: flex;
+}
+
+.left.card {
+	margin-right: 10rem;
+}
+
+.card img {
+	height: 20rem;
+	margin-right: 5rem;
+}
+
+.description {
+	padding: 2rem 0 2rem 0;
+}
+
+.card-title {
+	font-size: 2.4rem;
+	margin-bottom: 2rem;
+}
+
+.card-text {
+	font-size: 1.4rem;
+}
+
+footer {
+	text-align: right;
+	color: var(--cl-blue);
+	font-size: 1.4rem;
+	position: absolute;
+	right: 6rem;
+	bottom: 1rem;
+}
+
+/* Media query: < 1500px */
+@media only screen and (max-width: 93.75em) {
+	.description {
+		padding: 1rem 0 1rem 0;
+	}
+
+	.card-title {
+		font-size: 2.4rem;
+		margin-bottom: 1rem;
+	}
+}
+
+/* Media query: < 1300px */
+@media only screen and (max-width: 81.25em) {
+}
