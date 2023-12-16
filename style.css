@@ -15,16 +15,15 @@ html {
 	font-size: 62.5%;
 }
 
-img {
-	display: block;
-}
-
 body {
 	font-family: "Poppins", sans-serif;
 	min-height: 100vh;
 	padding: 4rem 6rem;
 	background-color: var(--cl-white);
-	position: relative;
+}
+
+img {
+	display: block;
 }
 
 .logo {
@@ -56,6 +55,8 @@ h1 span {
 .card img {
 	height: 20rem;
 	margin-right: 5rem;
+	width: 100%;
+	object-fit: cover;
 }
 
 .description {
@@ -75,13 +76,15 @@ footer {
 	text-align: right;
 	color: var(--cl-blue);
 	font-size: 1.4rem;
-	position: absolute;
-	right: 6rem;
-	bottom: 1rem;
+	margin-top: 10rem;
 }
 
 /* Media query: < 1500px */
 @media only screen and (max-width: 93.75em) {
+	.card img {
+		margin-right: 3rem;
+	}
+
 	.description {
 		padding: 1rem 0 1rem 0;
 	}
@@ -94,4 +97,56 @@ footer {
 
 /* Media query: < 1300px */
 @media only screen and (max-width: 81.25em) {
+	html {
+		font-size: 56.25%;
+	}
+
+	.logo {
+		height: 5rem;
+	}
+
+	.card {
+		flex-direction: column;
+	}
+
+	h1 {
+		font-size: 6rem;
+	}
+
+	.card img {
+		margin-bottom: 2rem;
+	}
+
+	.description {
+		padding: 0;
+	}
+}
+
+/* Media query: < 600px */
+@media only screen and (max-width: 37.5em) {
+	html {
+		font-size: 50%;
+	}
+
+	.logo {
+		height: 3rem;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 4.5rem;
+	}
+
+	.card-container {
+		flex-direction: column;
+	}
+
+	.left.card {
+		margin-right: 0;
+		margin-bottom: 5rem;
+	}
+
+	.card img {
+		margin-bottom: 1rem;
+	}
 }
