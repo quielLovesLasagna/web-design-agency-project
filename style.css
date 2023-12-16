@@ -55,7 +55,7 @@ h1 span {
 .card img {
 	height: 20rem;
 	margin-right: 5rem;
-	width: 100%;
+
 	object-fit: cover;
 }
 
@@ -114,6 +114,7 @@ footer {
 	}
 
 	.card img {
+		margin-right: 0;
 		margin-bottom: 2rem;
 	}
 
